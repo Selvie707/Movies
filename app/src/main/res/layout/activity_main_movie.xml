@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/black"
+    tools:context=".login.MainMovie">
+
+    <TextView
+        android:id="@+id/tv_main_movie_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="MOVIES+"
+        android:textSize="38sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_main_movie_picture"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:src="@drawable/frozen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_main_movie_app_name"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_main_movie_words"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_movie_words"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:background="#68000000"
+        app:layout_constraintBottom_toTopOf="@id/btn_main_movie_sign_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_main_movie_sign_up"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_marginBottom="2dp"
+        android:backgroundTint="#0F7CC6"
+        app:cornerRadius="16dp"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_main_movie_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_main_movie_login"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginBottom="36dp"
+        android:padding="12dp"
+        android:textColor="#0F7CC6"
+        android:backgroundTint="#FFFFFF"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

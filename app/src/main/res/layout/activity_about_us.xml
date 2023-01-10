@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".detail.AboutUs"
+    android:background="@drawable/main_background">
+
+    <TextView
+        android:id="@+id/tv_aboutus_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textSize="32sp"
+        android:textColor="@color/via"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_aboutus_weare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The place for you to enjoy your favorite movie"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/via"
+        app:layout_constraintTop_toBottomOf="@id/tv_aboutus_text"/>
+
+    <ScrollView
+        android:id="@+id/sv_aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_aboutus_weare"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_aboutus_memberphotos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_aboutus_weare"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="vertical"
+            android:layout_marginTop="36dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_aboutus_via"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_aboutus_viapic"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/selviee"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_aboutus_viatext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selvie"
+                    android:textSize="20sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/via"
+                    app:layout_constraintStart_toEndOf="@id/iv_aboutus_viapic"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_aboutus_vianpm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2125250091"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/via"
+                    app:layout_constraintStart_toEndOf="@id/iv_aboutus_viapic"
+                    app:layout_constraintTop_toBottomOf="@id/tv_aboutus_viatext"/>
+
+                <TextView
+                    android:id="@+id/tv_aboutus_viatexttext"
+                    android:layout_width="238dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:textColor="@color/via"
+                    android:text="I am a digital artist and i also ready to develop some spectacular aplication"
+                    app:layout_constraintStart_toEndOf="@id/iv_aboutus_viapic"
+                    app:layout_constraintTop_toBottomOf="@id/tv_aboutus_vianpm" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_aboutus_mulia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_aboutus_muliapic"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/muliaa"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_aboutus_muliatext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mulia Sahpira"
+                    android:textSize="20sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/via"
+                    app:layout_constraintStart_toEndOf="@id/iv_aboutus_muliapic"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_aboutus_mulianpm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2125250077"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/via"
+                    app:layout_constraintStart_toEndOf="@id/iv_aboutus_muliapic"
+                    app:layout_constraintTop_toBottomOf="@id/tv_aboutus_muliatext"/>
+
+                <TextView
+                    android:id="@+id/tv_aboutus_muliatexttext"
+                    android:layout_width="238dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:textColor="@color/via"
+                    android:text="I am good at figma designing, i could make your prototype looks splendid"
+                    app:layout_constraintStart_toEndOf="@id/iv_aboutus_muliapic"
+                    app:layout_constraintTop_toBottomOf="@id/tv_aboutus_mulianpm" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_aboutus_rafael"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_aboutus_rafaelpic"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/rafaell"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_aboutus_rafaeltext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rafael Lois Widyakusuma"
+                    android:textSize="20sp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/via"
+                    app:layout_constraintStart_toEndOf="@id/iv_aboutus_rafaelpic"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_aboutus_rafaelnpm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2125250092"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/via"
+                    app:layout_constraintStart_toEndOf="@id/iv_aboutus_rafaelpic"
+                    app:layout_constraintTop_toBottomOf="@id/tv_aboutus_rafaeltext"/>
+
+                <TextView
+                    android:id="@+id/tv_aboutus_rafaeltexttext"
+                    android:layout_width="238dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:textColor="@color/via"
+                    android:text="I am a web developer, contact me when you need a website"
+                    app:layout_constraintStart_toEndOf="@id/iv_aboutus_rafaelpic"
+                    app:layout_constraintTop_toBottomOf="@id/tv_aboutus_rafaelnpm" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp">
+
+                <TextView
+                    android:id="@+id/tv_aboutus_contactus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Us"
+                    android:textSize="22sp"
+                    android:textColor="@color/via"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_aboutus_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_aboutus_contactus"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_aboutus_email"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_email"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_emailvia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/via"
+                        android:text="selvietan.mukhua@mhs.mdp.ac.id"
+                        app:layout_constraintStart_toEndOf="@+id/iv_aboutus_email"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_emailmulia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/via"
+                        android:text="muliasahpira23@mhs.mdp.ac.id"
+                        app:layout_constraintStart_toEndOf="@+id/iv_aboutus_email"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_aboutus_emailvia"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_emailrafael"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/via"
+                        android:text="rafaelois17@mhs.mdp.ac.id"
+                        app:layout_constraintStart_toEndOf="@+id/iv_aboutus_email"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_aboutus_emailmulia"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_aboutus_wa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    app:layout_constraintTop_toBottomOf="@id/cl_aboutus_email"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_aboutus_wa"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/wa"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_wavia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/via"
+                        android:text="+62 895621654714"
+                        app:layout_constraintStart_toEndOf="@+id/iv_aboutus_wa"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_namewavia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/via"
+                        android:text="(Selvie)"
+                        app:layout_constraintStart_toEndOf="@+id/tv_aboutus_wavia"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_wamulia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/via"
+                        android:text="+62 81274612228"
+                        app:layout_constraintStart_toEndOf="@+id/iv_aboutus_wa"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_aboutus_wavia"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_namewamulia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/via"
+                        android:text="(Mulia S)"
+                        app:layout_constraintStart_toEndOf="@+id/tv_aboutus_wamulia"
+                        app:layout_constraintTop_toBottomOf="@id/tv_aboutus_namewavia"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_warafael"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/via"
+                        android:text="+62 85832604677"
+                        app:layout_constraintStart_toEndOf="@+id/iv_aboutus_wa"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_aboutus_wamulia"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_namewarafael"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/via"
+                        android:text="(Rafael LW)"
+                        app:layout_constraintStart_toEndOf="@+id/tv_aboutus_warafael"
+                        app:layout_constraintTop_toBottomOf="@id/tv_aboutus_namewamulia"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_aboutus_fb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    app:layout_constraintTop_toBottomOf="@id/cl_aboutus_wa"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_aboutus_fb"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/facebook"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_fbvia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="16dp"
+                        android:text="Selvie Tan"
+                        android:textColor="@color/via"
+                        app:layout_constraintStart_toEndOf="@+id/iv_aboutus_fb"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_namefbvia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16dp"
+                        android:text="(Selvie)"
+                        android:textColor="@color/via"
+                        app:layout_constraintStart_toEndOf="@+id/tv_aboutus_fbvia"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_fbmulia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="16dp"
+                        android:text="Mulia Sahpira"
+                        android:textColor="@color/via"
+                        app:layout_constraintStart_toEndOf="@+id/iv_aboutus_fb"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_aboutus_fbvia"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_namefbmulia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16dp"
+                        android:text="(Mulia S)"
+                        android:textColor="@color/via"
+                        app:layout_constraintStart_toEndOf="@+id/tv_aboutus_fbmulia"
+                        app:layout_constraintTop_toBottomOf="@id/tv_aboutus_namefbvia"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_fbrafael"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/via"
+                        android:text="Rafael Lois Widyakusuma"
+                        app:layout_constraintStart_toEndOf="@+id/iv_aboutus_fb"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_aboutus_fbmulia"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_namefbrafael"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16dp"
+                        android:text="(Rafael LW)"
+                        android:textColor="@color/via"
+                        app:layout_constraintStart_toEndOf="@+id/tv_aboutus_fbrafael"
+                        app:layout_constraintTop_toBottomOf="@id/tv_aboutus_namefbmulia"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_aboutus_ig"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    app:layout_constraintTop_toBottomOf="@id/cl_aboutus_fb"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_aboutus_ig"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ig"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_igvia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="16dp"
+                        android:text="selvie_tan707"
+                        android:textColor="@color/via"
+                        app:layout_constraintStart_toEndOf="@+id/iv_aboutus_ig"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_nameigvia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16dp"
+                        android:text="(Selvie)"
+                        android:textColor="@color/via"
+                        app:layout_constraintStart_toEndOf="@+id/tv_aboutus_igvia"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_igmulia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="16dp"
+                        android:text="muliasahpira_"
+                        android:textColor="@color/via"
+                        app:layout_constraintStart_toEndOf="@+id/iv_aboutus_ig"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_aboutus_igvia"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_nameigmulia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16dp"
+                        android:text="(Mulia S)"
+                        android:textColor="@color/via"
+                        app:layout_constraintStart_toEndOf="@+id/tv_aboutus_igmulia"
+                        app:layout_constraintTop_toBottomOf="@id/tv_aboutus_nameigvia"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_igrafael"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="16dp"
+                        android:text="rflois17"
+                        android:textColor="@color/via"
+                        app:layout_constraintStart_toEndOf="@+id/iv_aboutus_ig"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_aboutus_igmulia"/>
+
+                    <TextView
+                        android:id="@+id/tv_aboutus_nameigrafael"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16dp"
+                        android:text="(Rafael LW)"
+                        android:textColor="@color/via"
+                        app:layout_constraintStart_toEndOf="@+id/tv_aboutus_igrafael"
+                        app:layout_constraintTop_toBottomOf="@id/tv_aboutus_nameigmulia"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/tv_aboutus_blank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:layout_marginTop="62dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@id/cl_aboutus_ig"
+                    app:layout_constraintStart_toStartOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
